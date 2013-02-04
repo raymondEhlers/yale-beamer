@@ -1,0 +1,61 @@
+\usepackage{yalecolours}
+
+\def\beamer@theme@base@blue{
+  \definecolor{YaleCore}{named}{YaleCoreBlue}
+  \definecolor{YaleLight}{named}{YaleLightBlue}
+  \definecolor{YaleDark}{named}{YaleDarkBlue}
+}
+\def\beamer@theme@base@orange{
+  \definecolor{YaleCore}{named}{YaleCoreOrange}
+  \definecolor{YaleLight}{named}{YaleLightOrange}
+  \definecolor{YaleDark}{named}{YaleDarkOrange}
+}
+\def\beamer@theme@base@purple{
+  \definecolor{YaleCore}{named}{YaleCorePurple}
+  \definecolor{YaleLight}{named}{YaleLightPurple}
+  \definecolor{YaleDark}{named}{YaleDarkPurple}
+}
+\def\beamer@theme@base@green{
+  \definecolor{YaleCore}{named}{YaleCoreGreen}
+  \definecolor{YaleLight}{named}{YaleLightGreen}
+  \definecolor{YaleDark}{named}{YaleDarkGreen}
+}
+\def\beamer@theme@base@teal{
+  \definecolor{YaleCore}{named}{YaleCoreTeal}
+  \definecolor{YaleLight}{named}{YaleLightTeal}
+  \definecolor{YaleDark}{named}{YaleDarkTeal}
+}
+
+\beamer@theme@base@blue
+\DeclareOptionBeamer{base}{\csname beamer@theme@base@#1\endcsname}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\setbeamercolor*{normal text}{fg=YaleDark,bg=YaleLight!20!white}
+\setbeamercolor*{structure}{fg=YaleDark}
+
+\setbeamercolor*{palette primary}{fg=white,bg=YaleLight}
+\setbeamercolor*{palette secondry}{fg=white,bg=YaleDark}
+\setbeamercolor*{palette tertiary}{fg=white,bg=YaleLight!40!black}
+\setbeamercolor*{palette quaternary}{fg=white,bg=YaleLight!40!white}
+
+\setbeamercolor*{title}{fg=white,bg=YaleLight!50!YaleCore}
+\setbeamercolor*{author}{fg=white,bg=YaleLight!40!black}
+\setbeamercolor*{institute}{parent=author}
+\setbeamercolor*{date}{fg=white,bg=YaleLight}
+\setbeamercolor*{abstract}{parent=author}
+
+\setbeamercolor*{lower separation line head}{fg=white,bg=YaleLight!80!black}
+
+\setbeamercolor*{special page canvas}{bg=YaleLight}
+\setbeamercolor*{special page separator upper}{bg=YaleLight!40!white}
+\setbeamercolor*{special page separator lower}{bg=YaleLight!40!black}
+\setbeamercolor*{special page title}{fg=white,bg=YaleLight!80!white}
+
+\setbeamercolor*{block body}{bg=YaleCore!20!normal text.bg,fg=YaleDark}
+\setbeamercolor*{block title}{bg=YaleDark,fg=white}
+
+\setbeamercolor*{alerted text}{fg=YaleCore}
+
+\mode<all>

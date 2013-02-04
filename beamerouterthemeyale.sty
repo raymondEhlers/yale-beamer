@@ -16,13 +16,13 @@
 \setbeamercolor{progress}{fg=structure.fg!50}
 
 % The University logo
-\pgfdeclareimage[height=1.5\cam@outer@pitch]{beamerlogocambridge}{uc-rev-cmyk}
+\pgfdeclareimage[height=1.5\cam@outer@pitch]{beamerlogoyale}{uc-rev-cmyk}
 
 \mode<presentation>
 
 % Mini frames
 
-\defbeamertemplate*{mini frame}{cambridge theme}
+\defbeamertemplate*{mini frame}{yale theme}
 {%
   \begin{pgfpicture}{0pt}{0pt}{0.1cm}{0.1cm}
     \pgfpathcircle{\pgfpoint{0.05cm}{0.05cm}}{0.05cm}
@@ -34,7 +34,7 @@
   \setbeamersize{mini frame size=.14cm,mini frame offset=.03cm}
 }
 
-\defbeamertemplate*{mini frame in current subsection}{cambridge theme}
+\defbeamertemplate*{mini frame in current subsection}{yale theme}
 {%
   \begin{pgfpicture}{0pt}{0pt}{0.1cm}{0.1cm}
     \pgfpathcircle{\pgfpoint{0.05cm}{0.05cm}}{0.05cm}
@@ -42,40 +42,40 @@
   \end{pgfpicture}%
 }
 
-\defbeamertemplate*{mini frame in other subsection}{cambridge theme}[1][50]
+\defbeamertemplate*{mini frame in other subsection}{yale theme}[1][50]
 {\color{fg!#1!bg}\usebeamertemplate{mini frame in current subsection}}
 
 % Navigation symbols
-\defbeamertemplate*{navigation symbols}{cambridge theme}{}
+\defbeamertemplate*{navigation symbols}{yale theme}{}
 
 % Section and subsections in head/foot
 
-\defbeamertemplate*{section in head/foot}{cambridge theme}
+\defbeamertemplate*{section in head/foot}{yale theme}
 {\insertsectionhead}
 
-\defbeamertemplate*{section in head/foot shaded}{cambridge theme}[1][50]
+\defbeamertemplate*{section in head/foot shaded}{yale theme}[1][50]
 {\color{fg!#1!bg}\usebeamertemplate{section in head/foot}}
 
-\defbeamertemplate*{subsection in head/foot}{cambridge theme}
+\defbeamertemplate*{subsection in head/foot}{yale theme}
 {\insertsubsectionhead}
 
-\defbeamertemplate*{subsection in head/foot shaded}{cambridge theme}[1][50]
+\defbeamertemplate*{subsection in head/foot shaded}{yale theme}[1][50]
 {\color{fg!#1!bg}\usebeamertemplate{subsection in head/foot}}
 
-\defbeamertemplate*{subsubsection in head/foot}{cambridge theme}
+\defbeamertemplate*{subsubsection in head/foot}{yale theme}
 {\insertsubsubsectionhead}
 
-\defbeamertemplate*{subsubsection in head/foot shaded}{cambridge theme}[1][50]
+\defbeamertemplate*{subsubsection in head/foot shaded}{yale theme}[1][50]
 {\color{fg!#1!bg}\usebeamertemplate{subsubsection in head/foot}}
 
 % background
 
-\defbeamertemplate*{background}{cambridge theme}
+\defbeamertemplate*{background}{yale theme}
 {}
 
 % Headline and footline
 
-\defbeamertemplate*{frametitle}{cambridge theme}
+\defbeamertemplate*{frametitle}{yale theme}
 {%
   \vskip-1pt % HACK: Removes a bright line at the top of the page.
   \begin{beamercolorbox}[wd=\paperwidth,ht=4.5\cam@outer@pitch,dp=\cam@outer@pitch,leftskip=2\cam@outer@pitch,sep=0pt]{palette primary}%
@@ -88,16 +88,16 @@
   \end{beamercolorbox}%
 }
 
-\defbeamertemplate*{footprogress}{cambridge theme}
+\defbeamertemplate*{footprogress}{yale theme}
 {%
   \usebeamerfont{progress}\usebeamercolor[fg]{progress}\insertframenumber\ of \inserttotalframenumber
 }
 
 % Frame title continuations, default
 
-\defbeamertemplate*{frametitle continuation}{cambridge theme}{\insertcontinuationcountroman}
+\defbeamertemplate*{frametitle continuation}{yale theme}{\insertcontinuationcountroman}
 
-%\defbeamertemplate*{footprogress}{cambridge theme}
+%\defbeamertemplate*{footprogress}{yale theme}
 %{%
 %\begin{tikzpicture}[x=\cam@outer@pitch,y=\cam@outer@pitch]
 %   \draw[step=0.5,gray,very thin] (-1.4,-1.4) grid (1.4,1.4); 
@@ -109,7 +109,7 @@
 % % \insertframenumber\ of \inserttotalframenumber
 %}
 
-\defbeamertemplate*{footline}{cambridge theme}
+\defbeamertemplate*{footline}{yale theme}
 {
   \ifx \insertframetitle \@empty
     % There was no frame title
@@ -126,21 +126,21 @@
 
 % Sidebar
 
-\defbeamertemplate*{sidebar left}{cambridge theme}
+\defbeamertemplate*{sidebar left}{yale theme}
 {}
 
-\defbeamertemplate*{sidebar right}{cambridge theme}
+\defbeamertemplate*{sidebar right}{yale theme}
 {}
 
-\defbeamertemplate*{sidebar canvas left}{cambridge theme}
+\defbeamertemplate*{sidebar canvas left}{yale theme}
 {}
 
-\defbeamertemplate*{sidebar canvas right}{cambridge theme}
+\defbeamertemplate*{sidebar canvas right}{yale theme}
 {}
 
 % Notes
 
-\defbeamertemplate*{note page}{cambridge theme}
+\defbeamertemplate*{note page}{yale theme}
 {%
   {%
     \scriptsize
@@ -186,7 +186,7 @@
 
 \ifbeamertemplateempty{logo}{%
    \setbeamertemplate{logo}{%
-      \pgfuseimage{beamerlogocambridge}
+      \pgfuseimage{beamerlogoyale}
    }
 }{%
    % Do nothing if logo is set.

@@ -7,7 +7,7 @@
 \newlength{\cam@inner@pitch} \setlength{\cam@inner@pitch}{0.0333333\paperheight} 
 
 % The University logo
-\pgfdeclareimage[height=2\cam@inner@pitch]{beamertitlelogocambridge}{uc-cmyk}
+\pgfdeclareimage[height=2\cam@inner@pitch]{beamertitlelogoyale}{uc-cmyk}
 
 \mode<presentation>
 
@@ -66,7 +66,7 @@
   \end{beamercolorbox}\nointerlineskip
 }
 
-\defbeamertemplate*{title page}{cambridge theme}[1][]
+\defbeamertemplate*{title page}{yale theme}[1][]
 {%
   \start@fullpage{title page canvas}
   %
@@ -101,7 +101,7 @@
 
 % Part page
 
-\defbeamertemplate*{part page}{cambridge theme}[1][]
+\defbeamertemplate*{part page}{yale theme}[1][]
 {
   \start@fullpage{part page canvas}
   \vskip2\cam@inner@pitch 
@@ -120,61 +120,61 @@
 
 % (sub-)section in toc: default
 
-\defbeamertemplate*{section in toc}{cambridge theme}
+\defbeamertemplate*{section in toc}{yale theme}
 {\inserttocsection\par}
 
-\defbeamertemplate*{subsection in toc}{cambridge theme}
+\defbeamertemplate*{subsection in toc}{yale theme}
 {\leavevmode\leftskip=1.5em\inserttocsubsection\par}
 
-\defbeamertemplate*{subsubsection in toc}{cambridge theme}
+\defbeamertemplate*{subsubsection in toc}{yale theme}
 {\leavevmode\normalsize\usebeamerfont{subsection in toc}\leftskip=3em%
   \usebeamerfont{subsubsection in toc}\inserttocsubsubsection\par}
 
 
 % (sub-)section in toc shaded, default
 
-\defbeamertemplate*{section in toc shaded}{cambridge theme}[1][20]
+\defbeamertemplate*{section in toc shaded}{yale theme}[1][20]
 {\begin{colormixin}{#1!parent.bg}\usebeamertemplate{section in toc}\end{colormixin}\unskip}
 
-\defbeamertemplate*{subsection in toc shaded}{cambridge theme}[1][20]
+\defbeamertemplate*{subsection in toc shaded}{yale theme}[1][20]
 {\begin{colormixin}{#1!parent.bg}\usebeamertemplate{subsection in toc}\end{colormixin}\unskip}
 
-\defbeamertemplate*{subsubsection in toc shaded}{cambridge theme}[1][20]
+\defbeamertemplate*{subsubsection in toc shaded}{yale theme}[1][20]
 {\begin{colormixin}{#1!parent.bg}\usebeamertemplate{subsubsection in toc}\end{colormixin}\unskip}
 
 % Itemize items, default
 
-\defbeamertemplate*{itemize item}{cambridge theme}{\scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
-\defbeamertemplate*{itemize subitem}{cambridge theme}{\tiny\raise1.5pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
-\defbeamertemplate*{itemize subsubitem}{cambridge theme}{\tiny\raise1.5pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
+\defbeamertemplate*{itemize item}{yale theme}{\scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
+\defbeamertemplate*{itemize subitem}{yale theme}{\tiny\raise1.5pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
+\defbeamertemplate*{itemize subsubitem}{yale theme}{\tiny\raise1.5pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
 
 
 % Enumerate items, default
 
-\defbeamertemplate*{enumerate item}{cambridge theme}{\insertenumlabel.}
-\defbeamertemplate*{enumerate subitem}{cambridge theme}{\insertenumlabel.\insertsubenumlabel}
-\defbeamertemplate*{enumerate subsubitem}{cambridge theme}{\insertenumlabel.\insertsubenumlabel.\insertsubsubenumlabel}
-\defbeamertemplate*{enumerate mini template}{cambridge theme}{\insertenumlabel}
+\defbeamertemplate*{enumerate item}{yale theme}{\insertenumlabel.}
+\defbeamertemplate*{enumerate subitem}{yale theme}{\insertenumlabel.\insertsubenumlabel}
+\defbeamertemplate*{enumerate subsubitem}{yale theme}{\insertenumlabel.\insertsubenumlabel.\insertsubsubenumlabel}
+\defbeamertemplate*{enumerate mini template}{yale theme}{\insertenumlabel}
 
 
 % Description item width
 
-\defbeamertemplate*{description item}{cambridge theme}{\insertdescriptionitem}
+\defbeamertemplate*{description item}{yale theme}{\insertdescriptionitem}
 
 % Itemize/Enumerate body
 
-\defbeamertemplate*{itemize/enumerate body begin}{cambridge theme}{}
-\defbeamertemplate*{itemize/enumerate body end}{cambridge theme}{}
+\defbeamertemplate*{itemize/enumerate body begin}{yale theme}{}
+\defbeamertemplate*{itemize/enumerate body end}{yale theme}{}
 
-\defbeamertemplate*{itemize/enumerate subbody begin}{cambridge theme}{}
-\defbeamertemplate*{itemize/enumerate subbody end}{cambridge theme}{}
+\defbeamertemplate*{itemize/enumerate subbody begin}{yale theme}{}
+\defbeamertemplate*{itemize/enumerate subbody end}{yale theme}{}
 
-\defbeamertemplate*{itemize/enumerate subsubbody begin}{cambridge theme}{}
-\defbeamertemplate*{itemize/enumerate subsubbody end}{cambridge theme}{}
+\defbeamertemplate*{itemize/enumerate subsubbody begin}{yale theme}{}
+\defbeamertemplate*{itemize/enumerate subsubbody end}{yale theme}{}
 
 % Alerted text
 
-\defbeamertemplate*{alerted text begin}{cambridge theme}{\setbeamercolor{local structure}{parent=alerted text}}
+\defbeamertemplate*{alerted text begin}{yale theme}{\setbeamercolor{local structure}{parent=alerted text}}
 
 % Structured text
 
@@ -182,17 +182,17 @@
 
 % Bibliography items
 
-\defbeamertemplate*{bibliography item}{cambridge theme}
+\defbeamertemplate*{bibliography item}{yale theme}
 {\lower3.5pt\hbox{\hskip2pt\pgfuseimage{beamericonarticle}\hskip1pt}}
 
-\defbeamertemplate*{bibliography entry article}{cambridge theme}{}
-\defbeamertemplate*{bibliography entry title}{cambridge theme}{\par}
-\defbeamertemplate*{bibliography entry location}{cambridge theme}{\par}
-\defbeamertemplate*{bibliography entry note}{cambridge theme}{\par}
+\defbeamertemplate*{bibliography entry article}{yale theme}{}
+\defbeamertemplate*{bibliography entry title}{yale theme}{\par}
+\defbeamertemplate*{bibliography entry location}{yale theme}{\par}
+\defbeamertemplate*{bibliography entry note}{yale theme}{\par}
 
 % Abstract
 
-\defbeamertemplate*{abstract begin}{cambridge theme}{%
+\defbeamertemplate*{abstract begin}{yale theme}{%
   \start@fullpage{abstract page canvas}
   \vskip4\cam@inner@pitch 
   \begin{beamercolorbox}[wd=\oversized@paperwidth,sep=0.5\cam@inner@pitch,leftskip=1.5\cam@inner@pitch]{abstract page title}
@@ -206,10 +206,10 @@
   \begin{beamercolorbox}[wd=\oversized@paperwidth,sep=2\cam@inner@pitch]{abstract}%
 }
 
-\defbeamertemplate*{abstract title}{cambridge theme}%
+\defbeamertemplate*{abstract title}{yale theme}%
 {}
 
-\defbeamertemplate*{abstract end}{cambridge theme}{%
+\defbeamertemplate*{abstract end}{yale theme}{%
   \end{beamercolorbox}\nointerlineskip%
   %\vskip2\cam@inner@pitch 
   \vskip0pt plus 1filll
@@ -220,37 +220,37 @@
 
 %{\beamercolorbox[vmode]{abstract}\leftskip2em\rightskip2em plus 1fill\usebeamerfont*{abstract}}
 
-%\defbeamertemplate*{abstract end}{cambridge theme}
+%\defbeamertemplate*{abstract end}{yale theme}
 %{}
 %{\medskip\endbeamercolorbox}
 
 % Verse
 
-\defbeamertemplate*{verse begin}{cambridge theme}
+\defbeamertemplate*{verse begin}{yale theme}
 {\beamercolorbox[vmode]{verse}}
 
-\defbeamertemplate*{verse end}{cambridge theme}
+\defbeamertemplate*{verse end}{yale theme}
 {\endbeamercolorbox}
 
 % Quotation
 
-\defbeamertemplate*{quotation begin}{cambridge theme}
+\defbeamertemplate*{quotation begin}{yale theme}
 {\beamercolorbox[vmode]{quotation}}
 
-\defbeamertemplate*{quotation end}{cambridge theme}
+\defbeamertemplate*{quotation end}{yale theme}
 {\endbeamercolorbox}
 
 % Quote
 
-\defbeamertemplate*{quote begin}{cambridge theme}
+\defbeamertemplate*{quote begin}{yale theme}
 {\beamercolorbox[vmode]{quote}}
 
-\defbeamertemplate*{quote end}{cambridge theme}
+\defbeamertemplate*{quote end}{yale theme}
 {\endbeamercolorbox}
 
 % Footnotes
 
-\defbeamertemplate*{footnote}{cambridge theme}
+\defbeamertemplate*{footnote}{yale theme}
 {
   \parindent 1em\noindent%
   \raggedright
@@ -259,7 +259,7 @@
 
 % Captions
 
-\defbeamertemplate*{caption}{cambridge theme}
+\defbeamertemplate*{caption}{yale theme}
 {%
   \raggedright
   {%
@@ -272,7 +272,7 @@
 
 % Blocks
 
-\defbeamertemplate*{block begin}{cambridge theme}
+\defbeamertemplate*{block begin}{yale theme}
 {
   \par\vskip\medskipamount%
   \begin{beamercolorbox}[colsep*=.75ex]{block title}
@@ -286,10 +286,10 @@
   \begin{beamercolorbox}[colsep*=.75ex,vmode]{block body}%
     \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
 }
-\defbeamertemplate*{block end}{cambridge theme}  
+\defbeamertemplate*{block end}{yale theme}  
 {\end{beamercolorbox}\vskip\smallskipamount}
 
-\defbeamertemplate*{block alerted begin}{cambridge theme}
+\defbeamertemplate*{block alerted begin}{yale theme}
 {
   \par\vskip\medskipamount%
   \begin{beamercolorbox}[colsep*=.75ex]{block title alerted}
@@ -304,11 +304,11 @@
     \ifbeamercolorempty[bg]{block body alerted}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
 }
 
-\defbeamertemplate*{block alerted end}{cambridge theme}
+\defbeamertemplate*{block alerted end}{yale theme}
 {\end{beamercolorbox}\vskip\smallskipamount}
 
 
-\defbeamertemplate*{block example begin}{cambridge theme}
+\defbeamertemplate*{block example begin}{yale theme}
 {
   \par\vskip\medskipamount%
   \begin{beamercolorbox}[colsep*=.75ex]{block title example}
@@ -322,12 +322,12 @@
   \begin{beamercolorbox}[colsep*=.75ex,vmode]{block body example}%
     \ifbeamercolorempty[bg]{block body example}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
 }
-\defbeamertemplate*{block example end}{cambridge theme}
+\defbeamertemplate*{block example end}{yale theme}
 {\end{beamercolorbox}\vskip\smallskipamount}
 
 % Theorems
 
-\defbeamertemplate*{theorem begin}{cambridge theme}
+\defbeamertemplate*{theorem begin}{yale theme}
 {%
   \begin{\inserttheoremblockenv}
   {%
@@ -336,22 +336,22 @@
   }%
 }
 
-\defbeamertemplate*{theorem end}{cambridge theme}
+\defbeamertemplate*{theorem end}{yale theme}
 {\end{\inserttheoremblockenv}}
 
 % Proofs
-\defbeamertemplate*{proof begin}{cambridge theme}
+\defbeamertemplate*{proof begin}{yale theme}
 {\begin{block}{\insertproofname}}
 
-\defbeamertemplate*{proof end}{cambridge theme}
+\defbeamertemplate*{proof end}{yale theme}
 {\end{block}}
 
-\defbeamertemplate*{qed symbol}{cambridge theme}
+\defbeamertemplate*{qed symbol}{yale theme}
 {\openbox}
 
 \mode<all>
 
 % Default title graphic is uni logo.
-\titlegraphic{\pgfuseimage{beamertitlelogocambridge}}
+\titlegraphic{\pgfuseimage{beamertitlelogoyale}}
 
 % vim:sw=2:ts=2:et
