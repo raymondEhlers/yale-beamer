@@ -4,10 +4,11 @@
 % In essence we want the vertical pitch to be such that there are 30 steps.
 % This is based on the PowerPoint template sizes.
 %
+% Unfortunately, I could not find a Yale equivalent
 \newlength{\cam@inner@pitch} \setlength{\cam@inner@pitch}{0.0333333\paperheight} 
 
 % The University logo
-\pgfdeclareimage[height=2\cam@inner@pitch]{beamertitlelogoyale}{uc-cmyk}
+\pgfdeclareimage[height=2\cam@inner@pitch]{beamerTitleLogoYale}{yaleLogo}
 
 \mode<presentation>
 
@@ -48,8 +49,10 @@
 % Title page
 
 \newcommand{\start@fullpage}[1]{
-  \setlength{\oversized@paperwidth}{\paperwidth}\addtolength{\oversized@paperwidth}{0.25em}
-  \setlength{\oversized@paperheight}{\paperheight}\addtolength{\oversized@paperheight}{0.25em}
+  % The two addtolength commands below are commented out to remove an overfill hbox warning
+  % So far, I don't see any difference with those commands commented out.
+  \setlength{\oversized@paperwidth}{\paperwidth}%\addtolength{\oversized@paperwidth}{0.25em}
+  \setlength{\oversized@paperheight}{\paperheight}%\addtolength{\oversized@paperheight}{0.25em}
   %
   % HACK: Beamer always inserts a 0.125em space after the frame title, even if it is
   % empty. We hack around this by skipping upwards and using a slightly oversized
@@ -352,6 +355,6 @@
 \mode<all>
 
 % Default title graphic is uni logo.
-\titlegraphic{\pgfuseimage{beamertitlelogoyale}}
+\titlegraphic{\pgfuseimage{beamerTitleLogoYale}}
 
 % vim:sw=2:ts=2:et

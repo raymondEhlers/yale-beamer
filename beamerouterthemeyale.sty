@@ -4,6 +4,7 @@
 % In essence we want the vertical pitch to be such that there are 30 steps.
 % This is based on the PowerPoint template sizes.
 %
+% Unfortunately, I could not find a Yale equivalent
 \newlength{\cam@outer@pitch} \setlength{\cam@outer@pitch}{0.0333333\paperheight} 
 
 \setbeamersize{text margin left=2\cam@outer@pitch}
@@ -16,7 +17,7 @@
 \setbeamercolor{progress}{fg=structure.fg!50}
 
 % The University logo
-\pgfdeclareimage[height=1.5\cam@outer@pitch]{beamerlogoyale}{uc-rev-cmyk}
+\pgfdeclareimage[height=1.5\cam@outer@pitch]{beamerLogoYale}{yaleLogoInverted}
 
 \mode<presentation>
 
@@ -78,7 +79,8 @@
 \defbeamertemplate*{frametitle}{yale theme}
 {%
   \vskip-1pt % HACK: Removes a bright line at the top of the page.
-  \begin{beamercolorbox}[wd=\paperwidth,ht=4.5\cam@outer@pitch,dp=\cam@outer@pitch,leftskip=2\cam@outer@pitch,sep=0pt]{palette primary}%
+  % Change the ht below to change the size of the frametitle. Default was 4.5
+  \begin{beamercolorbox}[wd=\paperwidth,ht=3.5\cam@outer@pitch,dp=\cam@outer@pitch,leftskip=2\cam@outer@pitch,sep=0pt]{palette primary}%
     \begin{beamercolorbox}[ht=0pt,sep=0pt]{}%
       \usebeamerfont{frametitle}\insertframetitle
     \end{beamercolorbox}
@@ -86,6 +88,8 @@
   \nointerlineskip
   \begin{beamercolorbox}[wd=\paperwidth,dp=0.5\cam@outer@pitch]{lower separation line head}%
   \end{beamercolorbox}%
+  % RE 10-8-2015: Remove some of the extra whitespace between the headline and the body text. I'm sure I'm not supposed to do this, but it seems to work! 
+  \vskip-15pt%
 }
 
 \defbeamertemplate*{footprogress}{yale theme}
@@ -186,7 +190,7 @@
 
 \ifbeamertemplateempty{logo}{%
    \setbeamertemplate{logo}{%
-      \pgfuseimage{beamerlogoyale}
+      \pgfuseimage{beamerLogoYale}
    }
 }{%
    % Do nothing if logo is set.
