@@ -120,7 +120,7 @@
   \else
     % There was a frame title, typeset the counterpart to the frame title (this is a hack).
     \begin{beamercolorbox}[sep=0.5\cam@outer@pitch,leftskip=1.5\cam@outer@pitch,rightskip=0.5\cam@outer@pitch]{palette secondary}%
-      \usebeamerfont{logo in head/foot}\insertlogo
+      \hbox{\usebeamerfont{progress}\usebeamercolor[fg]{progress} \insertshortauthor\ - \insertdate}%
       \hfill
       \hbox{\usebeamertemplate{footprogress}}
     \end{beamercolorbox}%
